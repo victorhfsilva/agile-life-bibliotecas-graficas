@@ -1,0 +1,11 @@
+* {
+    background: #d3d3d3;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
