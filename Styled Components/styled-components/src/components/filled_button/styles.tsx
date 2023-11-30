@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const FilledButton = styled.button`
-    width: 198px;
-    height: 54px;
     align-itens: center;
     color: #FFF;
     font-family: Inter;
