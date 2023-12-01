@@ -1,0 +1,25 @@
+
+
+.label{
+    font-size: 100px;
+    color: #485494;
+}
+
+.meu-botao {
+    background-color: #485494; /* Cor de fundo personalizada */
+    border: none; 
+    
+    
+  }
+  .Form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  #name{
+    border-radius: 2px  ;
+    border: 1px solid #485494 ;
+    background-color: rgb(72, 84, 148, 15%);
+  }
