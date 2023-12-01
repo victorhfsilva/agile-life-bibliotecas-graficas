@@ -1,0 +1,69 @@
+@import "styles/colors";
+@import "styles/fonts";
+@import "styles/definition";
+@import "styles/button";
+
+@mixin flexCenter($justify) {
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+}
+
+.container-main {
+
+    @include flexCenter(center);
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: $bg-gray;
+
+    div {
+        @include flexCenter(space-around);
+
+        flex-direction: column;
+
+        height: 50%;
+        width: 33.6rem;
+
+        button {
+            height: 5.4rem;
+            width: 19.8rem;
+
+            background: $color-blue2;
+
+            font-weight: 400;
+            font-size: 2.4rem;
+
+            color: $color-white;
+
+            &:hover {
+                background: $color-white;
+                color: $color-blue;
+            }
+        }
+    }
+
+    h1 {
+        color: $color-blue;
+        font-style: $inter;
+        font-weight: $font400;
+
+
+    }
+
+    input {
+        width: 100%;
+        height: 6.6rem;
+
+        padding-left: 1rem;
+
+        border: 1px solid $color-blue;
+        background: $bg-input-gray;
+
+        font-size: 2rem;
+        color: $color-white
+    }
+
+
+}

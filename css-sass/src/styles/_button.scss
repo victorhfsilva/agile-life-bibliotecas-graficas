@@ -1,0 +1,13 @@
+@import "colors";
+@import "fonts";
+
+button {
+    border-radius: 0.8rem;
+    border: 0.1rem solid $color-brown;
+
+    font-family: $inter;
+    font-style: normal;
+    line-height: normal;
+
+    cursor: pointer;
+}

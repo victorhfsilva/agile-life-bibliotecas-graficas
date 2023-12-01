@@ -1,0 +1,29 @@
+.container-main {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: darkgray;
+}
+
+button {
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+
+    height: 8rem;
+    width: 13rem;
+
+    border-radius: 1rem;
+    border: none;
+
+    background-color: blueviolet;
+    color: white;
+}
+
+button:hover {
+    background-color: white;
+    color: slateblue;
+    border: 1px solid indigo;
+
+    cursor: pointer;
+}
