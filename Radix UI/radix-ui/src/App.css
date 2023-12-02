@@ -1,0 +1,37 @@
+header {
+    background-color: indigo;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    margin:0 0 1rem 0;
+}
+
+#lb-name {
+    margin: 1rem 0 1rem 0;
+}
+
+#bt-enter {
+    margin: 1rem 0 1rem 0;
+}
+
+#a-google {
+    margin: 1rem 0 1rem 0;
+}
+
+#p-text {
+    margin: 1rem 0 1rem 0;
+}
+
+#lb-project {
+    margin: 1rem 0 1rem 0;
+}
+
+#rg-players {
+    margin: 1rem 0 1rem 0;
+}
+
+#sl-project {
+    margin: 1rem 0 1rem 0;
+}
