@@ -1,4 +1,4 @@
-#label {
+#lb-name, #lb-project, #lb-lista {
   color: #485494;
   text-align: center;
   font-family: Inter;
@@ -16,7 +16,7 @@
   justify-content: center;
 }
 
-#form {
+#f-name, #sl-project {
   width: 336px;
   height: 66px;
   border: 1px solid #485494;
@@ -28,10 +28,10 @@
   padding-left: 20px;
   border-radius: 8px;
   outline-color: #485494;
-  color:
+  color: #485494
 }
 
-#button {
+#bt-enter {
   color: #FFF;
   font-family: Inter;
   font-size: 24px;
@@ -46,7 +46,7 @@
   margin: 1rem 0rem 0rem 0rem;
 
   &:hover{
-    background: rgba(72, 84, 148, 0.95);
+    background-color: rgba(72, 84, 148, 0.95);
     border-color: rgba(72, 84, 148, 0.95);
   }
 }

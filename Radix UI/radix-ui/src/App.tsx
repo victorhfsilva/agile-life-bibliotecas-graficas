@@ -25,7 +25,7 @@ function App() {
 
               <Separator orientation='horizontal' size={'4'}/>
 
-              <Text as='label' size={'6'} id="lb-project">Selecione o projeto?</Text>
+              <Text as='label' size={'6'} id="lb-project">Selecione o projeto.</Text>
               <Select.Root defaultValue='aleatorio' size={'3'}>
               <Select.Trigger id='sl-project'/>
                 <Select.Content>

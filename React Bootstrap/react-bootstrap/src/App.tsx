@@ -9,14 +9,41 @@ function App() {
   return (
     <>
     <main>
-    
-      <Form>
-        <Stack id="stack" gap ={2}>
-          <Form.Label id="label" htmlFor='name'>Insira seu nome.</Form.Label>
-          <Form.Control type="name" id="form" placeholder='Nome'/>
-          <Button variant="primary" id="button">Entrar na sala</Button>
+        <Stack id="stack" gap ={3}>
+          <Form.Label id="lb-name" htmlFor='name'>Insira seu nome.</Form.Label>
+          <Form.Control type="name" id="f-name" placeholder='Nome'/>
+          
+          <Form.Label id="lb-project">Selecione o projeto.</Form.Label>
+          <Form.Select id='sl-project'>
+            <option>Aleatório</option>
+            <option>Unicórnio</option>
+            <option>Apocalipse Zombie</option>
+            <option>Navio Pirata</option>  
+          </Form.Select>
+
+
+          <Form.Label id="lb-lista">Escolha da Lista:</Form.Label>
+          <Form>
+            <Form.Group>
+              <Form.Check
+                  type={'radio'}
+                  id={'2-aleatorios'}
+                  label={'2 aleatórios'}
+                />
+                <Form.Check
+                  type={'radio'}
+                  id={'3-aleatorios'}
+                  label={'3 aleatórios'}
+                />
+                <Form.Check
+                  type={'radio'}
+                  id={'4-aleatorios'}
+                  label={'4 aleatórios'}
+                />
+            </Form.Group>
+          </Form>
+          <Button variant="primary" id="bt-enter">Entrar na sala</Button>
         </Stack>
-      </Form>
     </main>
    </>
   )
