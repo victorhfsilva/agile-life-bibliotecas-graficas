@@ -1,8 +1,14 @@
 import {
   Button,
   FormControl,
+  FormControlLabel,
+  FormLabel,
+  InputLabel,
+  Link,
   MenuItem,
   Paper,
+  Radio,
+  RadioGroup,
   Select,
   Stack,
   TextField,
@@ -86,10 +92,54 @@ export function App() {
 
   return (
     <ThemeProvider theme={appTheme}>
-      <Paper elevation={0} sx={{ height: '100vh' }} square>
-        <Typography sx={{ color: (theme) => theme.palette.text.primary }}>
-          Qual seu daltonismo?
+      <Paper elevation={0} sx={{ height: '100vh' }}>
+        <Typography variant='h1'>Agile Life</Typography>
+        <Link underline='none' href='https://www.google.com/'>
+          Google
+        </Link>
+        <Typography paragraph>
+          A sua equipe de TI resolveu diversificar e trabalhar com tipos de
+          projetos pouco ortodoxos. Seu desafio é entregar todos os itens
+          solicitados antes que acabe o prazo, o café ou a boa-vontade do
+          cliente.
         </Typography>
+
+        <FormLabel id='demo-radio-buttons-group-label'>
+          Selecione de 2 a 4 papéis para compor o Time
+        </FormLabel>
+        <RadioGroup
+          aria-labelledby='demo-radio-buttons-group-label'
+          name='radio-buttons-group'
+        >
+          <FormControlLabel
+            value='1'
+            control={<Radio />}
+            label='Escolher da lista'
+          />
+          <FormControlLabel
+            value='2'
+            control={<Radio />}
+            label='2 aleatórios'
+          />
+          <FormControlLabel
+            value='3'
+            control={<Radio />}
+            label='3 aleatórios'
+          />
+          <FormControlLabel
+            value='4'
+            control={<Radio />}
+            label='4 aleatórios'
+          />
+        </RadioGroup>
+
+        <InputLabel
+          label-id='Qual seu daltonismo'
+          area-label='Qual seu daltonismo'
+          sx={{ color: (theme) => theme.palette.text.primary }}
+        >
+          Qual seu daltonismo?
+        </InputLabel>
         <Select
           value={colorMode}
           onChange={(event) => setColorMode(event.target.value)}
@@ -108,12 +158,12 @@ export function App() {
           }}
         >
           <Stack spacing={4} alignItems='center'>
-            <Typography
+            <FormLabel
+              htmlFor='inputId'
               sx={{ color: (theme) => theme.palette.text.secondary }}
-              variant='h4'
             >
               Qual o seu nome?
-            </Typography>
+            </FormLabel>
             <TextField
               sx={{
                 bgcolor: (theme) => theme.palette.background.paper,
@@ -122,6 +172,7 @@ export function App() {
                 width: '21rem',
               }}
               variant='outlined'
+              id='inputId'
               type='text'
             />
             <Button
