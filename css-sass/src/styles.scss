@@ -3,46 +3,122 @@
 @import "styles/definition";
 @import "styles/button";
 
-@mixin flexCenter($justify) {
+@mixin flexCenter($justify, $align) {
     display: flex;
-    align-items: center;
+    align-items: $align;
     justify-content: $justify;
 }
 
 .container-main {
 
-    @include flexCenter(center);
+    @include flexCenter(flex-start, center);
+    flex-direction: column;
 
     width: 100vw;
     height: 100vh;
 
     background-color: $bg-gray;
+}
 
-    div {
-        @include flexCenter(space-around);
+.container-primary {
+    width: 100%;
 
-        flex-direction: column;
+    a {
+        font-weight: 400;
+        font-size: 2.4rem;
+        font-style: $inter;
+        color: $color-brown;
+    }
 
-        height: 50%;
-        width: 33.6rem;
+    p {
+        font-weight: 200;
+        font-size: 2rem;
+        font-style: $inter;
+        color: $color-brown;
 
-        button {
-            height: 5.4rem;
-            width: 19.8rem;
+        margin: 2rem 0;
+        padding-right: 20rem;
 
-            background: $color-blue2;
 
-            font-weight: 400;
-            font-size: 2.4rem;
+        background-color: rgba(135, 207, 235, 0.562)
+    }
 
-            color: $color-white;
+    label {
+        font-weight: 200;
+        font-size: 2rem;
+        font-style: $inter;
+        color: $color-brown;
 
-            &:hover {
-                background: $color-white;
-                color: $color-blue;
-            }
+        margin-left: 0.5rem
+    }
+
+    input {
+        margin-left: 1.5rem
+    }
+
+    select {
+        margin-left: 1.0rem;
+    }
+
+    select,
+    option {
+        padding: 0.5rem;
+
+        font-weight: 200;
+        font-size: 1rem;
+        font-style: $inter;
+        color: chocolate;
+
+        border: none;
+        border-radius: 1rem;
+    }
+
+    .role-select {
+
+
+        &::-webkit-scrollbar {
+            width: 0.5rem;
+            height: 0.5rem;
+        }
+
+        &:-webkit-scrollbar-track {
+            background: transparent;
+            padding: 1rem;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            scrollbar-width: thin;
+            background-color: rgb(115, 115, 229);
+            border-radius: 1.5rem;
         }
     }
+}
+
+.container-secundary {
+    @include flexCenter(space-around, center);
+
+    flex-direction: column;
+
+    height: 50%;
+    width: 33.6rem;
+
+    button {
+        height: 5.4rem;
+        width: 19.8rem;
+
+        background: $color-blue2;
+
+        font-weight: 400;
+        font-size: 2.4rem;
+
+        color: $color-white;
+
+        &:hover {
+            background: $color-white;
+            color: $color-blue;
+        }
+    }
+
 
     h1 {
         color: $color-blue;
@@ -64,6 +140,5 @@
         font-size: 2rem;
         color: $color-white
     }
-
 
 }
