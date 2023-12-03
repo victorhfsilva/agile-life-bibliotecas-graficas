@@ -23,3 +23,11 @@
     border: 1px solid #485494 ;
     background-color: rgb(72, 84, 148, 15%);
   }
+
+  fieldset{
+
+    outline: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+  }
